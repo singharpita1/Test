@@ -1,0 +1,44 @@
+﻿@*@model UploadFile.Models.Mean*@
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h4>Mean/StandardDeviation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="MeanResult">
+            <div class="form-group">
+                <label for="SearchPharse" class="control-label"></label>
+                @*<input name="SearchPharse" class="form-control" />*@
+            </div>
+            <p>
+                @ViewData.Model
+            </p>
+            <div class="form-group">
+                <input type="submit" value="Mean" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<!--<div class="col-md-4">
+    <form asp-action="StandardDeviationResult">
+        <div class="form-group">
+            <label for="SearchPharse" class="control-label"></label>-->
+            @*<input name="SearchPharse" class="form-control" />*@
+        <!--</div>
+        <p>
+            @ViewData.Model
+        </p>
+        <div class="form-group">
+            <input type="submit" value="Standard Deviation" class="btn btn-primary" />
+        </div>
+    </form>
+</div>-->
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+
+

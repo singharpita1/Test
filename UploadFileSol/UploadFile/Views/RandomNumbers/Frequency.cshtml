@@ -1,0 +1,23 @@
+﻿@*@model List<string>*@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Frequency</h4>
+<div class="col-md-4">
+    <form asp-action="FrequencyResult">
+        <div class="form-group">
+            <label for="SearchPharse" class="control-label"></label>
+        </div>
+        <p>
+            @ViewData.Model
+        </p>
+        <div class="form-group">
+            <input type="submit" value="Frequency" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
